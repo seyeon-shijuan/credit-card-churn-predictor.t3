@@ -1,0 +1,27 @@
+# 데이터 설명 및 구조 정리
+- CLIENTNUM(`int`)
+    - 고객번호
+- Atrition_Flag(`str`)
+    - 현재 상태(Target)
+- Months_Inactive_12_mon(`int`)
+    - 거래내역 없는 거래월 수
+- Card_Category(`int`)
+    - 거래내역 있는 거래월 수
+- Total_Revolving_Bal(`int`)
+    - 신용카드의 리볼빙(지불 미루기)한 금액의 합계
+- Avg_Open_To_Buy(`float`)
+    - 신용한도(금액)를 초과할 때 승인 받을 수 있는 금액
+- Total_Amt_Chng_Q4_Q1(`float`)
+    - 1분기 대비 4분기 카드 거래금액 비율
+- Total_Trans_Amt(`int`)
+    - 12개월 동안의 총 거래금액
+    - 한화 540만원 가량으로 크지 않다. 신용카드 미사용자의 영향을 많이 받았을 것으로 추정된다.
+- Total_Trans_Ct(`int`)
+    - 12개월 동안의 총 거래건수
+    - 10건 미만인 건수는 없다.
+- Total_Ct_Chng_Q4_Q1(`float`)
+    - 1분기 대비 4분기 거래건수 비율
+    - 0은 7건인데 4분기 거래 건수가 없다는 것 같다.
+    - 최대 3.7
+- Avg_Utilization_Ratio(`float`)
+    - 평균 카드 이용률
