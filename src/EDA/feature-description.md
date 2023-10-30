@@ -17,9 +17,9 @@
 |Contacts_Count_12_mon|카드사에 접촉한 횟수|<span style="color: blue">int</span>||||
 |Credit_Limit|월간 신용 한도|<span style="color: blue">float</span>||||
 |Total_Revolving_Bal|신용카드의 리볼빙(지불 미루기)한 남은 금액|<span style="color: blue">int</span>||||
-|Avg_Open_To_Buy|신용한도(금액)를 초과할 때 승인 받을 수 있는 금액|<span style="color: blue">float</span>||||
+|Avg_Open_To_Buy(Total_Open_To_Buy)|신용한도(금액)를 초과할 때 승인 받을 수 있는 금액|<span style="color: blue">float</span>||||
 |Total_Amt_Chng_Q4_Q1|1분기 대비 4분기 카드 거래금액 비율|<span style="color: blue">float</span>||||
 |Total_Trans_Amt|12개월 동안의 총 거래금액|<span style="color: blue">int</span>||한화 540만원 가량으로 크지 않다. 신용카드 미사용자의 영향을 많이 받았을 것으로 추정된다.||
 |Total_Trans_Ct|12개월 동안의 총 거래건수|<span style="color: blue">int</span>||10건 미만인 건수는 없다.||
 |Total_Ct_Chng_Q4_Q1|1분기 대비 4분기 거래건수 비율|<span style="color: blue">float</span>||0은 7건인데 4분기 거래 건수가 없다는 것 같다. (최대 3.7)||
-|Avg_Utilization_Ratio|평균 카드 이용률|<span style="color: blue">float</span>||||
+|Avg_Utilization_Ratio(Utilization_Ratio)|평균 카드 이용률 -> 그냥 카드 이용률|<span style="color: blue">float</span>||Credit_Limit 대비 Total_Revolving_Bal의 값이다. 파생변수로 예측된다.||
